@@ -5,6 +5,12 @@
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
 
 <script type="text/javascript">
+    // more documentation available at
+    // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
+
+    // the link to your model provided by Teachable Machine export panel
+    const URL = "https://kevincll.github.io/A-B-C-Testing/";
+
     async function createModel() {
         const checkpointURL = "/model.json"; // model topology
         const metadataURL = "/metadata.json"; // model metadata
